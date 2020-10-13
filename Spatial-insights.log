@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.10.12)  12 OCT 2020 22:18
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.10.12)  12 OCT 2020 22:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -768,7 +768,24 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ] [2
 
-] (./Spatial-insights.toc)
+] (./Spatial-insights.toc
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 7.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 5.0pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 10.00092pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 7.00064pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 5.00046pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 9.99893pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.99925pt on input line 3.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 4.99947pt on input line 3.
+)
 \tf@toc=\write5
 \openout5 = `Spatial-insights.toc'.
 
@@ -776,53 +793,37 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
-(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 145.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.0pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.00092pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.00064pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.00046pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 153.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 153.
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 144.
 [5] [6
 
 ]
 Chapter 1.
 
-LaTeX Warning: Reference `methods' on page 7 undefined on input line 161.
+LaTeX Warning: Reference `methods' on page 7 undefined on input line 162.
 
 File: Spatial-insights_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf
 )
 <use Spatial-insights_files/figure-latex/nice-fig-1.pdf>
-[7] [8]
+[7] [8] [9] [10
+
+]
 Chapter 2.
-(./Spatial-insights.bbl [9
+(./Spatial-insights.bbl [11] [12
 
-] [10
-
-]) [11] (./Spatial-insights.aux)
+]) [13] (./Spatial-insights.aux)
 Package rerunfilecheck Info: File `Spatial-insights.out' has not changed.
-(rerunfilecheck)             Checksum: 5EF5086E7F41AEAE18E2265A6B583EC6;308.
+(rerunfilecheck)             Checksum: A029A98FF9EA1757ECCDA7DD64D7C44F;612.
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17064 strings out of 479445
- 297283 string characters out of 5880305
- 753387 words of memory out of 5000000
- 36163 multiletter control sequences out of 15000+600000
- 541539 words of font info for 82 fonts, out of 8000000 for 9000
+ 17069 strings out of 479445
+ 297375 string characters out of 5880305
+ 752387 words of memory out of 5000000
+ 36166 multiletter control sequences out of 15000+600000
+ 541555 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 84i,8n,118p,1158b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 84i,8n,118p,468b,355s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Spatial-insights.pdf (11 pages).
+Output written on Spatial-insights.pdf (13 pages).

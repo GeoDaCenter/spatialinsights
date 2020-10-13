@@ -1,4 +1,6 @@
 fig:nice-fig
 tab:nice-tab
 intro
+Example-1
 the-problem
+Example-2

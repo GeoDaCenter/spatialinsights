@@ -1,7 +1,8 @@
 # Introduction {#intro}
 
-With this proposal, we seek to find effective ways for translating philosophy of science and history of science to improve the practice of computational social science research and teaching. 
-As computational thinking and data engineering have been gaining prominence in our fields of economics, public policy and geography to help analyze larger and more complex data, we increasingly see the need to re-introduce and translate scientific reasoning, theory building, and research design to this new context to avoid descriptive, expected and unreliable results.     
+Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+## Example Subsection1{#Example-1}
 
 You can label chapter and section titles using `{#label}` after them, e.g., we can reference Chapter \@ref(intro). If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \@ref(methods).
 
