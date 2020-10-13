@@ -1,0 +1,9 @@
+# The Problem
+
+Without computational expertise and horsepower, quantitative data cannot be analyzed at scale in the social sciences. As a team of social science faculty and executive directors at UChicago who are relying on (spatial) statistical and computational analysis of data in our teaching and research, we embrace the analysis of bigger data and more powerful computation. However, a challenge we have been observing in this context is that computational and statistical tools often embody ways of reasoning that are not explicitly thought about -- or sometimes there is a direct assumption that an engineering mode of reasoning applies to all problems. Assumptions that big data and computation are replacing the need for scientific reasoning and philosophy of science altogether are a purist example -- such as [@Anderson08] argument for “the end of theory and the scientific method in the age of big data.” Other examples include the push to “let the data speak for themselves,” as embodied in some automated data analysis cases (Demiralp et a. 2017) or approaches that are primarily data-driven and atheoretical.
+
+
+
+`r if (knitr:::is_html_output()) '
+# References {-}
+'`
