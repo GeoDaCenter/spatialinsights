@@ -1,8 +1,0 @@
-fig:nice-fig
-tab:nice-tab
-intro
-Example-1
-the-problem
-Example-2
-chapter-3
-Example-3
