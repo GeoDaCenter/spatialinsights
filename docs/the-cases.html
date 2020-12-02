@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 The Cases | Exploratory spatial data analysis with GeoDa</title>
+  <meta name="description" content="This is a bookdown example for the data analysis" />
+  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 The Cases | Exploratory spatial data analysis with GeoDa" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="This is a bookdown example for the data analysis" />
+  <meta name="github-repo" content="rstudio/bookdown-demo" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 The Cases | Exploratory spatial data analysis with GeoDa" />
+  
+  <meta name="twitter:description" content="This is a bookdown example for the data analysis" />
+  
+
+<meta name="author" content="Spatial Data Analysis Center" />
+
+
+<meta name="date" content="2020-12-02" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="intro.html"/>
+<link rel="next" href="references.html"/>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<script src="libs/accessible-code-block-0.0.1/empty-anchor.js"></script>
+<link href="libs/anchor-sections-1.0/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+code.sourceCode > span { display: inline-block; line-height: 1.25; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode { white-space: pre; position: relative; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+code.sourceCode { white-space: pre-wrap; }
+code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Spatial Exploratory Data</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Introduction</a></li>
+<li class="chapter" data-level="1" data-path="intro.html"><a href="intro.html"><i class="fa fa-check"></i><b>1</b> Introduction</a><ul>
+<li class="chapter" data-level="1.1" data-path="intro.html"><a href="intro.html#Example-1"><i class="fa fa-check"></i><b>1.1</b> Example Subsection1</a></li>
+</ul></li>
+<li class="chapter" data-level="2" data-path="the-cases.html"><a href="the-cases.html"><i class="fa fa-check"></i><b>2</b> The Cases</a><ul>
+<li class="chapter" data-level="2.1" data-path="the-cases.html"><a href="the-cases.html#john-snow-and-the-cholera-epidemic"><i class="fa fa-check"></i><b>2.1</b> John Snow and the Cholera Epidemic</a></li>
+<li class="chapter" data-level="2.2" data-path="the-cases.html"><a href="the-cases.html#sherlock-holmes-and-the-napoleon-busts"><i class="fa fa-check"></i><b>2.2</b> Sherlock Holmes and the Napoleon Busts</a></li>
+<li class="chapter" data-level="2.3" data-path="the-cases.html"><a href="the-cases.html#the-immigrant-paradox"><i class="fa fa-check"></i><b>2.3</b> The Immigrant Paradox</a></li>
+<li class="chapter" data-level="2.4" data-path="the-cases.html"><a href="the-cases.html#health-and-race-a-preliminary-approach"><i class="fa fa-check"></i><b>2.4</b> Health and Race: A Preliminary Approach</a></li>
+<li class="chapter" data-level="2.5" data-path="the-cases.html"><a href="the-cases.html#turnout-and-elections-a-spatial-perspective"><i class="fa fa-check"></i><b>2.5</b> Turnout and Elections: A Spatial Perspective</a></li>
+<li class="chapter" data-level="2.6" data-path="the-cases.html"><a href="the-cases.html#asthma-and-pollution"><i class="fa fa-check"></i><b>2.6</b> Asthma and Pollution</a></li>
+<li class="chapter" data-level="2.7" data-path="the-cases.html"><a href="the-cases.html#racial-diversity-what-built-environment-features-distinguish-racially-diverse-from-non-diverse-areas"><i class="fa fa-check"></i><b>2.7</b> Racial Diversity: What Built Environment Features Distinguish Racially Diverse from Non-Diverse Areas?</a></li>
+</ul></li>
+<li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./"><span style='color: #4ba7b3; font-size:42px'>Exploratory spatial data analysis with GeoDa</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="the-cases" class="section level1">
+<h1><span class="header-section-number">Chapter 2</span> The Cases</h1>
+<div id="john-snow-and-the-cholera-epidemic" class="section level2">
+<h2><span class="header-section-number">2.1</span> John Snow and the Cholera Epidemic</h2>
+<p>How demarcation helped John Snow figure out that water caused cholera to spread in the 19th century</p>
+<div align="center">
+<div class="figure">
+<img src="images/snow1.png" alt="" />
+<p class="caption">Source: <a href="https://en.wikipedia.org/wiki/John_Snow#/media/File:John_Snow.jpg">Wikipedia</a></p>
+</div>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>In the mid-19th century, cholera was claiming the lives of thousands in London. But how did the disease spread? In other words, what was the main mode of transmission of cholera?</p>
+<p>For an overview of this case, see our <a href="https://uploads.knightlab.com/storymapjs/a0d512bc2bc17977f1029fedead0329a/trying-out/draft.html">introductory story map</a> and <a href="https://youtu.be/lGN8SK1Y1h4">video</a>.</p>
+<div align="center">
+<p><img src="images/snow2.png" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>To answer that question, a doctor named John Snow developed a waterborne theory of cholera and then studied the locations where the disease was prevalent as well as those where it was not, along with specific locations where water suppliers varied.</p>
+<div align="center">
+<p><img src="images/snow3.jpg" /></p>
+</div>
+<p>By demarcating cases in this way and testing his theory at both a micro (Soho) and a macro level (South London), Snow was able to gather evidence that was compatible with the waterborne theory of cholera but was harder to account for by the airborne theory.</p>
+<p>For more detail on the research designs devised by Snow and his contemporaries, see our <a href="https://docs.google.com/presentation/d/e/2PACX-1vTpkyf_CSeAgD8datvssFfNHHwypUEYIg-tAC-cNaj6Nu_wrqqIOdsT_Y4phZYl8EBJA_OyWvrFhJfV/pub?start=false&amp;loop=false&amp;delayms=3000&amp;slide=id.g9d798a6fd3_0_81">specialized story map</a> and video.</p>
+<div align="center">
+<p><img src="images/snow4.png" /></p>
+</div>
+<p><font size="5"> The Tools </font></p>
+<p>Using cluster analysis and other statistical techniques like conditional plots and averages charts, it is today possible to replicate and illustrate Snow’s analyses with our <a href="https://geodacenter.github.io/data-and-lab/data/geoda_scripts_snow.pdf">GeoDa demo scripts</a>.</p>
+<div align="center">
+<p><img src="images/snow5.png" /></p>
+</div>
+<div align="center">
+<p><img src="images/snow6.jpg" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>Snow used a natural experiment to find out that cholera cases concentrated in groups of people who relied on specific water supply mechanisms, whereas groups which relied on a different water supply were not affected even if they were located right next to clusters of infections.</p>
+<div align="center">
+<p><img src="images/snow7.jpg" /></p>
+</div>
+<p><font size="5"> More Information </font></p>
+<p>Access our <a href="https://geodacenter.github.io/data-and-lab/snow/">data</a> and <a href="https://geodacenter.github.io/data-and-lab/data/snow_documentation.pdf">documentation</a> to replicate these findings in <a href="https://geodacenter.github.io">GeoDa</a>.</p>
+<div align="center">
+<p><img src="images/snow8.jpg" /></p>
+</div>
+</div>
+<div id="sherlock-holmes-and-the-napoleon-busts" class="section level2">
+<h2><span class="header-section-number">2.2</span> Sherlock Holmes and the Napoleon Busts</h2>
+<p>Finding a key common feature of the smashed Napoleon busts allowed the famous detective to solve the mystery of why they were smashed.</p>
+<div align="center">
+<div class="figure">
+<img src="images/sherlock1.jpg" alt="" />
+<p class="caption">Source: <a href="https://www.arthur-conan-doyle.com/index.php/The_Adventure_of_the_Six_Napoleons">The Arthur Conan Doyle Encyclopedia</a></p>
+</div>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>In <a href="https://sherlock-holm.es/stories/pdf/a4/1-sided/sixn.pdf">The Adventures of the Six Napoleons</a>, the famous detective Sherlock Holmes faced a mystery: Napoleon busts were being destroyed in private property across the city of London and nobody knew why.</p>
+<p>For an overview of this case, see our <a href="https://docs.google.com/presentation/d/e/2PACX-1vS1ADwo9Uj2JQ-jSqV3Yd1u00FUA33m20NcWvh0qW78axsJ-a-hCMmThFmBjNAyMNnhrcBQVeZxkIB9/pub?start=false&amp;loop=false&amp;delayms=3000">story map</a> and <a href="https://www.youtube.com/watch?v=Fu-4NmiuxJI">video</a>.</p>
+<div align="center">
+<p><img src="images/sherlock2.png" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>Policemen initially thought that hatred was causing someone to break the busts – or that they were dealing with a potential vendetta.</p>
+<div align="center">
+<p><img src="images/sherlock3.png" /></p>
+</div>
+<p>According to Sherlock, however, neither of these theories explained why only a specific subset of busts was being smashed. By observing the circumstances of the attacks and discovering that the busts came from the same manufacturer and the same batch, he came up with the theory that there was a hidden object inside one of these busts. He then predicted which bust would be the next to be destroyed, alerted the police and conducted a quasi-natural experiment at the location where he thought that the attack would take place.</p>
+<div align="center">
+<p><img src="images/sherlock4.jpg" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>As it turned out, Sherlock was right and the burglar was caught on site. Basing his approach on demarcation and a quasi-natural experimental setting was successful at solving the mystery.</p>
+<div align="center">
+<div class="figure">
+<img src="images/sherlock5.png" alt="" />
+<p class="caption">Source: <a href="https://pixabay.com/photos/sherlock-holmes-london-rowdy-5499030/">Pixabay</a></p>
+</div>
+</div>
+</div>
+<div id="the-immigrant-paradox" class="section level2">
+<h2><span class="header-section-number">2.3</span> The Immigrant Paradox</h2>
+<p>We demonstrate that health outcomes in poor immigrant neighborhoods that are better than those in nearby non-immigrant poor neighborhoods do not actually reflect the “Immigrant Paradox” theory but are likely an artifact of a younger immigrant population.</p>
+<div align="center">
+<p><img src="images/immigrant1.png" /></p>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>Economic hardship has long been associated with worse health outcomes, particularly with more life years lost prematurely. But, in the US, Hispanic immigrants often do better in terms of health even when they face similar socioeconomic issues. Why?</p>
+<p>For an overview of this case, see our video <a href="https://www.youtube.com/watch?v=sDjuZ1Ak9kQ&amp;t=44s">here</a>.</p>
+<div align="center">
+<p><img src="images/immigrant2.png" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>We compare premature mortality outcomes for different demographic groups and use a process of abductive reasoning to explore the plausibility of hypotheses that could explain these outcomes.</p>
+<div align="center">
+<p><img src="images/immigrant3.png" /></p>
+</div>
+<p><font size="5"> The Tools </font></p>
+<p>We test these hypotheses with scatter plots, parallel coordinate plots, conditional box plots and various types of maps – and with regression analysis.</p>
+<div align="center">
+<p><img src="images/immigrant4.jpg" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>In the end, while insurance rates for different groups do not seem to explain the difference in health outcomes, younger ages in Hispanic neighborhoods do appear to be the driving factor behind lower premature mortality compared to predominantly White or African-American neighborhoods in Chicago.</p>
+<div align="center">
+<p><img src="images/immigrant5.jpg" /></p>
+</div>
+</div>
+<div id="health-and-race-a-preliminary-approach" class="section level2">
+<h2><span class="header-section-number">2.4</span> Health and Race: A Preliminary Approach</h2>
+<p>By <strong>Atman Mehta</strong> (3rd year student in the College)</p>
+<p>A protocol that differentiates groups based on racial majorities provides an initial assessment of potential determinants of health indicators</p>
+<div align="center">
+<p><img src="images/health1.png" /></p>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>How can we create groups to explain differences in outcomes in the social sciences? The question of the determinants of health in Chicago can be used as an example to illustrate this process.</p>
+<p>For an overview of this case, see more from our summer project <a href="https://uchicago.box.com/s/ganfzzmzonoaqc1of2kzzkw67pgg7csw">here</a>.</p>
+<div align="center">
+<p><img src="images/health2.png" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>Atman first looked at potential plausible explanations and mechanisms, with the main idea being that greater economic hardship means greater unemployment, which means lower insurance and results in premature mortality. He then differentiated demographic groups according to race to test if the variables behaved in the expected ways across tracts with different racial majorities.</p>
+<div align="center">
+<p><img src="images/health3.png" /></p>
+</div>
+<p><font size="5"> The Tools </font></p>
+<p>Several hypotheses were tested by using tools available in GeoDa such as parallel coordinate plots and scatter plots as well as co-location, cluster and LISA maps.</p>
+<div align="center">
+<p><img src="images/health4.png" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>The resulting protocol helps in structuring the problem at hand in a way that is easy to test. Substantially, dissimilarities in indicators such as premature mortality rates for different racial groups do not seem to be explained by unemployment or violent crime. This puzzle is explored in more detail in the case of The Immigrant Paradox, also available on this website.</p>
+<div align="center">
+<p><img src="images/health5.png" /></p>
+</div>
+<p><font size="5"> More Information </font></p>
+<p>Access our <a href="https://geodacenter.github.io/data-and-lab/snow/">UPDATE BEFORE PUBLISHING</a> to replicate these findings in <a href="https://geodacenter.github.io">GeoDa</a>.</p>
+<div align="center">
+<p><img src="images/health6.jpg" /></p>
+</div>
+</div>
+<div id="turnout-and-elections-a-spatial-perspective" class="section level2">
+<h2><span class="header-section-number">2.5</span> Turnout and Elections: A Spatial Perspective</h2>
+<p>By <strong>R.E. Stern</strong> (1st year student in the College)</p>
+<p>Changes in turnout in presidential elections from 2012 to 2016, which could have had an impact on their outcome, appear to be related to demographics.</p>
+<div align="center">
+<p><img src="images/elections1.png" /></p>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>What are the factors that explain changes in turnout in the 2016 presidential election compared to previous elections?</p>
+<p>For an overview of this case, see more from our summer project <a href="https://uchicago.box.com/s/5wu1l2zz8tbwlxm9frvruuicx6ogtw2b">here</a>.</p>
+<div align="center">
+<p><img src="images/elections2.png" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>R.E.’s protocol highlights the importance of an iterative discovery process, i.e. the continuous testing and re-testing of hypotheses to develop explanatory insights. The hypothesis that non-college white voters turned out to vote in higher numbers in 2016 leads to expectations with an estimated probability that are then tested.</p>
+<div align="center">
+<p><img src="images/elections3.jpg" /></p>
+</div>
+<p><font size="5"> The Tools </font></p>
+<p>First, exploratory spatial data analysis tools such as box maps give an overview of the data. Then, GeoDa’s cluster maps such as K-Means or Local Moran’s I allow users to re-assess the probabilities they assign to each hypothesis.</p>
+<div align="center">
+<p><img src="images/elections4.png" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>Counties with more white residents without college degrees did see slightly higher turnout in 2016 compared to 2012 – more importantly, though, counties with more non-white residents and no college degrees saw less turnout.</p>
+<div align="center">
+<p><img src="images/elections5.jpg" /></p>
+</div>
+<p><font size="5"> More Information </font></p>
+<p>Access our <a href="https://geodacenter.github.io/data-and-lab/snow/">UPDATE BEFORE PUBLISHING</a> to replicate these findings in <a href="https://geodacenter.github.io">GeoDa</a>.</p>
+<div align="center">
+<p><img src="images/elections6.jpg" /></p>
+</div>
+</div>
+<div id="asthma-and-pollution" class="section level2">
+<h2><span class="header-section-number">2.6</span> Asthma and Pollution</h2>
+<p>By <strong>Mark Baker</strong> (4th year student in the College) and <strong>Jizhou Wang</strong> (3rd year student in the College)</p>
+<p>Proximity to potential bus pollution is higher in areas with more residents who are economically vulnerable and African-American, groups which are also at higher asthma risk.</p>
+<div align="center">
+<p><img src="images/asthma1.jpg" /></p>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>Are groups at higher risk of asthma also more likely to be exposed to bus pollution?</p>
+<p>For an overview of this case, see <a href="https://uchicago.box.com/s/zmoyz07zwu2opnuovfrogge6ckkwjtpq">insights</a> and <a href="https://uchicago.box.com/s/1zo055jgec3sxrygvr0unrtsr8ptvb8v">methods</a> from our summer project.</p>
+<div align="center">
+<p><img src="images/asthma2.jpg" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>Path diagrams outline what factors could be driving spatial concentrations of asthma, including pollution from traffic, lower housing values and older homes. Mechanisms for hypotheses are developed and tested to assess their strength based on a classification by Mark Baker.</p>
+<div align="center">
+<p><img src="images/asthma3.jpg" /></p>
+</div>
+<p><font size="5"> The Tools </font></p>
+<p>Mark Baker and Jizhou Wang assess the strength of different hypotheses with boxplots, scatterplots, parallel coordinate plots, cluster analyses, averages charts and regressions in GeoDa.</p>
+<div align="center">
+<p><img src="images/asthma4.png" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>Economically vulnerable and African-American neighborhoods that have a higher asthma risk are also more likely to be exposed to traffic pollution.</p>
+<div align="center">
+<p><img src="images/asthma5.jpg" /></p>
+</div>
+</div>
+<div id="racial-diversity-what-built-environment-features-distinguish-racially-diverse-from-non-diverse-areas" class="section level2">
+<h2><span class="header-section-number">2.7</span> Racial Diversity: What Built Environment Features Distinguish Racially Diverse from Non-Diverse Areas?</h2>
+<p>By <strong>Felix Farb</strong> (Junior High School student)</p>
+<p>Planning-related factors like highway dividers and land use diversity, as well as out-migration of African-American residents, distinguish racially diverse from non-diverse areas in Chicago.</p>
+<div align="center">
+<p><img src="images/racialdiversity1.png" /></p>
+</div>
+<p><font size="5"> The Puzzle </font></p>
+<p>Do racially diverse areas in the city of Chicago differ in terms of planning-related factors from non-diverse areas?</p>
+<p>For an overview of this case, see <a href="https://uchicago.box.com/s/pdku4e9rszvhtfnl1mv9o6sdv0ul1j3b">insights</a> and <a href="https://uchicago.box.com/s/rllzauyb3ew80htdq92i38o0re3q34v0">methods</a> from our summer project.</p>
+<div align="center">
+<p><img src="images/racialdiversity2.jpg" /></p>
+</div>
+<p><font size="5"> The Research Design </font></p>
+<p>An exploratory spatial data analysis identifies areas in Chicago that are racially diverse and compares potential planning-related drivers such as highway dividers and diverse land uses to gentrification. Felix’s protocol demonstrates how hypotheses can be made more and more specific to make them testable.</p>
+<div align="center">
+<p><img src="images/racialdiversity3.png" /></p>
+</div>
+<p><font size="5"> The Tools </font></p>
+<p>Different maps, distance buffers, averages charts and K-Means clusters are used to assess the relevance of the results to each hypothesis.</p>
+<div align="center">
+<p><img src="images/racialdiversity4.png" /></p>
+</div>
+<p><font size="5"> The Insights </font></p>
+<p>This initial exploratory analysis suggests that racially diverse neighborhoods in Chicago are more likely to be physically divided from other neighborhoods through highways and have more diverse land uses. Some diverse areas are also characterized by disproportionate out-migration of African-American residents.</p>
+<div align="center">
+<p><img src="images/racialdiversity5.png" /></p>
+</div>
+<p><font size="5"> More Information </font></p>
+<p>Access our <a href="https://geodacenter.github.io/data-and-lab/snow/">UPDATE BEFORE PUBLISHING</a> to replicate these findings in <a href="https://geodacenter.github.io">GeoDa</a>.</p>
+<div align="center">
+<p><img src="images/racialdiversity6.png" /></p>
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="intro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="references.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": "https://github.com/rstudio/bookdown-demo/edit/master/02-literature.Rmd",
+"text": "Edit"
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["Spatial insights.pdf", "Spatial insights.epub"],
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
