@@ -28,7 +28,7 @@ To answer that question, a doctor named John Snow developed a waterborne theory 
 
 By demarcating cases in this way and testing his theory at both a micro (Soho) and a macro level (South London), Snow was able to gather evidence that was compatible with the waterborne theory of cholera but was harder to account for by the airborne theory.
 
-For more detail on the research designs devised by Snow and his contemporaries, see our [specialized story map](https://docs.google.com/presentation/d/e/2PACX-1vTpkyf_CSeAgD8datvssFfNHHwypUEYIg-tAC-cNaj6Nu_wrqqIOdsT_Y4phZYl8EBJA_OyWvrFhJfV/pub?start=false&loop=false&delayms=3000&slide=id.g9d798a6fd3_0_81) and video.
+For more detail on the research designs devised by Snow and his contemporaries, see our [specialized story map](https://docs.google.com/presentation/d/e/2PACX-1vTpkyf_CSeAgD8datvssFfNHHwypUEYIg-tAC-cNaj6Nu_wrqqIOdsT_Y4phZYl8EBJA_OyWvrFhJfV/pub?start=false&loop=false&delayms=3000&slide=id.g9d798a6fd3_0_81) and [video](https://youtu.be/wClwk94IkLY).
 
 <div align="center">
 ![](images/snow4.png)
@@ -242,7 +242,7 @@ Counties with more white residents without college degrees did see slightly high
 
 <font size="5"> More Information </font>
 
-Access our [UPDATE BEFORE PUBLISHING](https://geodacenter.github.io/data-and-lab/snow/) to replicate these findings in [GeoDa](https://geodacenter.github.io).
+Access our [data](https://uchicago.box.com/s/m7lf4ldukuh3b6zle3cqjqd437vb5yqm) to replicate these findings in [GeoDa](https://geodacenter.github.io).
 
 <div align="center">
 ![](images/elections6.jpg)
@@ -338,7 +338,7 @@ This initial exploratory analysis suggests that racially diverse neighborhoods i
 
 <font size="5"> More Information </font>
 
-Access our [UPDATE BEFORE PUBLISHING](https://geodacenter.github.io/data-and-lab/snow/) to replicate these findings in [GeoDa](https://geodacenter.github.io).
+Access our [data](https://uchicago.box.com/s/5rmjez5pxh7odornc9xzmg3x0wmqkmjg) to replicate these findings in [GeoDa](https://geodacenter.github.io).
 
 <div align="center">
 ![](images/racialdiversity6.png)
