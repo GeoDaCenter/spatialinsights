@@ -146,7 +146,7 @@ In the end, while insurance rates for different groups do not seem to explain th
 
 ## Health and Race: A Preliminary Approach
 
-By **Atman Mehta** (3rd year student in the College)
+Author: **Atman Mehta** (3rd year student in the College)
 
 A protocol that differentiates groups based on racial majorities provides an initial assessment of potential determinants of health indicators
 
@@ -198,7 +198,7 @@ Access our [UPDATE BEFORE PUBLISHING](https://geodacenter.github.io/data-and-lab
 
 ## Turnout and Elections: A Spatial Perspective
 
-By **R.E. Stern** (1st year student in the College)
+Author: **R.E. Stern** (1st year student in the College)
 
 Changes in turnout in presidential elections from 2012 to 2016, which could have had an impact on their outcome, appear to be related to demographics.
 
@@ -250,7 +250,7 @@ Access our [UPDATE BEFORE PUBLISHING](https://geodacenter.github.io/data-and-lab
 
 ## Asthma and Pollution
 
-By **Mark Baker** (4th year student in the College) and **Jizhou Wang** (3rd year student in the College)
+Authors: **Mark Baker** and **Jizhou Wang** (3rd year students in the College)
 
 Proximity to potential bus pollution is higher in areas with more residents who are economically vulnerable and African-American, groups which are also at higher asthma risk.
 
@@ -294,7 +294,7 @@ Economically vulnerable and African-American neighborhoods that have a higher as
 
 ## Racial Diversity: What Built Environment Features Distinguish Racially Diverse from Non-Diverse Areas?
 
-By **Felix Farb** (Junior High School student)
+Author: **Felix Farb** (Junior High School student)
 
 Planning-related factors like highway dividers and land use diversity, as well as out-migration of African-American residents, distinguish racially diverse from non-diverse areas in Chicago.
 
