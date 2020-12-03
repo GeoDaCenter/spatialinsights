@@ -2,12 +2,6 @@ fig:nice-fig
 tab:nice-tab
 intro
 Example-1
-the-problem
-Example-2
-chapter-3
-Example-3
-the-case-of-john-snow-and-the-cholera-epidemic
-the-puzzle
 the-cases
 john-snow-and-the-cholera-epidemic
 sherlock-holmes-and-the-napoleon-busts
