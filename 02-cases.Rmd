@@ -5,7 +5,7 @@
 How demarcation helped John Snow figure out that water caused cholera to spread in the 19th century
 
 <div align="center">
-![Source: [Wikipedia](https://en.wikipedia.org/wiki/John_Snow#/media/File:John_Snow.jpg)](images/snow1.png)
+![Source: [Wikipedia](https://en.wikipedia.org/wiki/John_Snow#/media/File:John_Snow.jpg)](images/snow1.jpg)
 </div> 
 
 <font size="5"> The Puzzle </font>
@@ -186,14 +186,6 @@ The resulting protocol helps in structuring the problem at hand in a way that is
 
 <div align="center">
 ![](images/health5.png)
-</div>
-
-<font size="5"> More Information </font>
-
-Access our [UPDATE BEFORE PUBLISHING](https://geodacenter.github.io/data-and-lab/snow/) to replicate these findings in [GeoDa](https://geodacenter.github.io).
-
-<div align="center">
-![](images/health6.jpg)
 </div>
 
 ## Turnout and Elections: A Spatial Perspective
