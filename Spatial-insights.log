@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.3)  3 DEC 2020 12:08
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020) (preloaded format=xelatex 2020.12.3)  4 DEC 2020 14:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -813,13 +813,17 @@ File: Spatial-insights_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf
 
 ]
 Chapter 2.
-File: images/snow1.png Graphic file (type bmp)
-<images/snow1.png>
+File: images/snow1.jpg Graphic file (type bmp)
+<images/snow1.jpg>
+[11]
 File: images/snow2.png Graphic file (type bmp)
 <images/snow2.png>
-[11] [12]
 File: images/snow3.jpg Graphic file (type bmp)
 <images/snow3.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[12]
 File: images/snow4.png Graphic file (type bmp)
 <images/snow4.png>
 
@@ -893,38 +897,41 @@ File: images/health4.png Graphic file (type bmp)
 [24]
 File: images/health5.png Graphic file (type bmp)
 <images/health5.png>
-File: images/health6.jpg Graphic file (type bmp)
-<images/health6.jpg>
-[25]
 File: images/elections1.png Graphic file (type bmp)
 <images/elections1.png>
+[25]
 File: images/elections2.png Graphic file (type bmp)
 <images/elections2.png>
-[26]
 File: images/elections3.jpg Graphic file (type bmp)
 <images/elections3.jpg>
+[26]
 File: images/elections4.png Graphic file (type bmp)
 <images/elections4.png>
-[27]
 File: images/elections5.jpg Graphic file (type bmp)
 <images/elections5.jpg>
 File: images/elections6.jpg Graphic file (type bmp)
 <images/elections6.jpg>
+[27]
 File: images/asthma1.jpg Graphic file (type bmp)
 <images/asthma1.jpg>
-[28]
 File: images/asthma2.jpg Graphic file (type bmp)
 <images/asthma2.jpg>
-[29]
+[28]
 File: images/asthma3.jpg Graphic file (type bmp)
 <images/asthma3.jpg>
+[29]
 File: images/asthma4.png Graphic file (type bmp)
 <images/asthma4.png>
 File: images/asthma5.jpg Graphic file (type bmp)
 <images/asthma5.jpg>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [30]
 File: images/racialdiversity1.png Graphic file (type bmp)
 <images/racialdiversity1.png>
+File: images/racialdiversity2.jpg Graphic file (type bmp)
+<images/racialdiversity2.jpg>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -935,13 +942,16 @@ UISH RACIALLY DIVERSE FROM NON-DIVERSE AREAS? \TU/lmr/m/n/10 31
  []
 
 [31]
-File: images/racialdiversity2.jpg Graphic file (type bmp)
-<images/racialdiversity2.jpg>
 File: images/racialdiversity3.png Graphic file (type bmp)
 <images/racialdiversity3.png>
-[32]
 File: images/racialdiversity4.png Graphic file (type bmp)
 <images/racialdiversity4.png>
+
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+[32]
+File: images/racialdiversity5.png Graphic file (type bmp)
+<images/racialdiversity5.png>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -952,25 +962,13 @@ UISH RACIALLY DIVERSE FROM NON-DIVERSE AREAS? \TU/lmr/m/n/10 33
  []
 
 [33]
-File: images/racialdiversity5.png Graphic file (type bmp)
-<images/racialdiversity5.png>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[34]
 File: images/racialdiversity6.png Graphic file (type bmp)
 <images/racialdiversity6.png>
+[34] (./Spatial-insights.bbl [35
 
-Overfull \hbox (311.38907pt too wide) has occurred while \output is active
-\TU/lmr/m/sl/10 2.7.  RACIAL DIVERSITY: WHAT BUILT ENVIRONMENT FEATURES DISTING
-UISH RACIALLY DIVERSE FROM NON-DIVERSE AREAS? \TU/lmr/m/n/10 35
- []
+] [36
 
-[35] [36
-
-] (./Spatial-insights.bbl [37] [38
-
-]) [39] (./Spatial-insights.aux)
+]) [37] (./Spatial-insights.aux)
 Package rerunfilecheck Info: File `Spatial-insights.out' has not changed.
 (rerunfilecheck)             Checksum: 0BEDF91DC7C70BBEBADFDD0C8C9C8D66;2543.
 
@@ -978,12 +976,12 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17346 strings out of 479393
- 303171 string characters out of 5878762
+ 17340 strings out of 479393
+ 303058 string characters out of 5878762
  749443 words of memory out of 5000000
- 36451 multiletter control sequences out of 15000+600000
+ 36446 multiletter control sequences out of 15000+600000
  541555 words of font info for 84 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  94i,8n,118p,649b,353s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on Spatial-insights.pdf (39 pages).
+Output written on Spatial-insights.pdf (37 pages).
